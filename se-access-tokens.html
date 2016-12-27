@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<script type='text/javascript' src='https://api.stackexchange.com/js/2.0/all.js'></script>
+		<script type='text/javascript'>
+			// <[CDATA[   Just in case...
+			
+			SE.init({
+				clientId: 8367,
+				key: '4Xn3WqlyWDlZsrAB56CeTw((',
+				channelUrl: 'http://api.stackexchange.com/docs/proxy',
+				complete: function(data){alert(data);}
+			});
+			
+			function replaceBodyWith(newHtml){
+				document.getElementById('everything').innerHTML = newHtml;
+			}
+			
+			function auth(){
+				SE.authenticate({
+					success: function(data){replaceBodyWith("<p>Authentication successful! Returned JSON string: <code>"+JSON.stringify(data)+"</code></p>");},
+					error: function(data){replaceBodyWith("<p>Something went wrong. Returned JSON string: <code>"+JSON.stringify(data)+"</code></p>");},
+					scope: ['write_access', 'no_expiry'],
+					networkUsers: true
+				});
+			}
+			// ]]>
+		</script>
+	</head>
+	<body>
+		<div id='everything'>
+			<button onclick='auth();'>Get an access token for Stack Exchange API</button>
+		</div>
+	</body>
+</html>
