@@ -1,0 +1,19 @@
+a:link { /* Unvisited links */
+	text-decoration:  none;
+	background-color: white;
+	color:            blue;
+} 
+a:visited { /* Visited links */
+	text-decoration:  none;
+	background-color: white;
+	color:            purple;
+} 
+a:hover { /* Hovered-over links */
+	text-decoration:  none;
+	background-color: white;
+	color:            red;
+} 
+a:active { /* Clicked-and-held-down links */
+	text-decoration:  none;
+	font-weight:      bold;
+} 
