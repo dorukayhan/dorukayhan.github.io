@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
 	<head>
 		<title>Get an SE API access token</title>
 		<script type="text/javascript">
@@ -7,7 +8,7 @@
 				var scope = buildScope();
 				var clientId = get('clientId').value;
 				var redirectURI = encodeURIComponent(get('redirectURI').value);
-				var authPage = get('clientSideAuth').checked ? "https://stackexchange.com/oauth/dialog" : "https://stackexchange.com/oauth";
+				var authPage = get('clientSideAuth').checked ? "httpss://stackexchange.com/oauth/dialog" : "httpss://stackexchange.com/oauth";
 				window.open(authPage+'?client_id='+clientId+'&scope='+scope+'&redirect_uri='+redirectURI);
 			}
 			
@@ -23,13 +24,12 @@
 			}
 			// ]]>
 		</script>
-		<link rel="stylesheet" href="noindex/fonts.css">
-		<link rel="stylesheet" href="noindex/link-styling.css">
+		<link rel="stylesheet" href="noindex/styling.css">
 	</head>
 	<body>
-		<p>You can get an access token for the <a href="https://api.stackexchange.com">Stack Exchange API</a> using this page, without dealing with all the arcane details of how OAuth works through HTTP.</p>
-		<p>First, login to a <a href="http://stackexchange.com">Stack Exchange</a> site. <a href="http://stackexchange.com/sites">ANY site</a> will work as long as it's not <a href="http://area51.stackexchange.com">Area 51</a>.</p>
-		<p>Then,  go to the <a href="http://stackapps.com">Stack Apps</a> registry of the application you want to get an access token for (you can register an app if you haven't done so from <a href="http://stackapps.com/apps/oauth/register">http://stackapps.com/apps/oauth/register</a>) and fill in the blanks with the information on the registry page:</p>
+		<p>You can get an access token for the <a href="httpss://api.stackexchange.com">Stack Exchange API</a> using this page, without dealing with all the arcane details of how OAuth works through https.</p>
+		<p>First, login to a <a href="https://stackexchange.com">Stack Exchange</a> site. <a href="https://stackexchange.com/sites">ANY site</a> will work except <a href="https://area51.stackexchange.com">Area 51</a>.</p>
+		<p>Then,  go to the <a href="https://stackapps.com">Stack Apps</a> registry of the application you want to get an access token for (you can register an app if you haven't done so from <a href="https://stackapps.com/apps/oauth/register">https://stackapps.com/apps/oauth/register</a>) and fill in the blanks with the information on the registry page:</p>
 		<!-- I hate link markup -->
 		
 		Client ID<br>
@@ -41,7 +41,7 @@
 		<input id="writeAccess" type="checkbox" checked>Perform write operations (such as answering questions and voting)<br>
 		<input id="privateInfo" type="checkbox">Read the full history of private actions (such as flagging)<br><br>
 		
-		Redirect URI - <strong>must</strong> be under your app's OAuth domain (e.g <code>https://stackexchange.com/oauth/login_success</code> for <code>stackexchange.com</code>)<br>
+		Redirect URI - <strong>must</strong> be under your app's OAuth domain (e.g <code>httpss://stackexchange.com/oauth/login_success</code> for <code>stackexchange.com</code>)<br>
 		<input id="redirectURI" type="text"><br><br>
 		
 		And finally, is your app registered as client-side or server-side?<br>

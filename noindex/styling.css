@@ -15,4 +15,10 @@ a:hover { /* Hovered-over links */
 } 
 a:active { /* Clicked-and-held-down links */
 	text-decoration:  underline;
-} 
+}
+body {
+	font-family: Calibri,"Lucida Grande","Lucida Sans",Arial;
+}
+h1.centered {
+	text-align: center;
+}
