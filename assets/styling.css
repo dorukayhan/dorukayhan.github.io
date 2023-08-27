@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400');
+
+:root {
+	--solarized-base02: lab(20 -12 -12);
+	--solarized-base01: lab(45  -7  -7);
+	--solarized-base00: lab(50  -7  -7);
+	--solarized-base1:  lab(65  -5  -2);
+	--solarized-base2:  lab(92   0  10);
+	--solarized-base3:  lab(97   0  10);
+	--solarized-blue:   lab(55 -10 -45);
+	--solarized-magenta:lab(50  65  -5);
+	--solarized-violet: lab(50  15 -45);
+	--solarized-green:  lab(60 -20  65);
+	--bgcolor: var(--solarized-base3);
+}
+body {
+	font-family: "Open Sans","Segoe UI","Noto Sans",sans-serif;
+	/* yes we unironically apply bettermotherfuckingwebsite.com advice */
+	max-width: 727px; /* reasonable line width */
+	margin-left: auto;
+	margin-right: auto; /* center the whole thing */
+	padding: 0 10px; /* small gap on sides on mobile */
+	line-height: 1.5; /* readability */
+	color: lab(30 -7 -7); /* base01 is too light */
+	background-color: var(--bgcolor);
+	font-size: 18px; /* readability again */
+}
+a:link {
+	text-decoration:  none; /* remove the underline */
+	color:            var(--solarized-magenta);
+} 
+a:visited {
+	text-decoration:  none;
+	color:            var(--solarized-violet);
+} 
+a:hover {
+	text-decoration:  none;
+	color:            var(--solarized-green);
+} 
+a:active { /* clicked-and-held-down */
+	text-decoration:  underline;
+}
+.block-center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.pfp {
+	border-radius: 50%;
+	width: 144px;
+}
+code {
+	font-family: 'Cascadia Mono','Consolas',monospace;
+}
