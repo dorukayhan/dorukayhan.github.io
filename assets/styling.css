@@ -15,7 +15,7 @@
 }
 body {
 	font-family: "Open Sans","Segoe UI","Noto Sans",sans-serif;
-	/* yes we unironically apply bettermotherfuckingwebsite.com advice */
+	/* shoutout to bettermotherfuckingwebsite.com */
 	max-width: 727px; /* reasonable line width */
 	margin-left: auto;
 	margin-right: auto; /* center the whole thing */
@@ -24,6 +24,9 @@ body {
 	color: lab(30 -7 -7); /* base01 is too light */
 	background-color: var(--bgcolor);
 	font-size: 18px; /* readability again */
+}
+code {
+	font-family: 'Cascadia Mono','Consolas',monospace;
 }
 a:link {
 	text-decoration:  none; /* remove the underline */
@@ -49,6 +52,6 @@ a:active { /* clicked-and-held-down */
 	border-radius: 50%;
 	width: 144px;
 }
-code {
-	font-family: 'Cascadia Mono','Consolas',monospace;
+.smol {
+	font-size: 0.8em;
 }
