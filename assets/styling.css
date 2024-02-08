@@ -1,5 +1,5 @@
+/* util */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400');
-
 :root {
 	--solarized-base02: lab(20 -12 -12);
 	--solarized-base01: lab(45  -7  -7);
@@ -13,6 +13,7 @@
 	--solarized-green:  lab(60 -20  65);
 	--bgcolor: var(--solarized-base3);
 }
+/* regular text formatting */
 body {
 	font-family: "Open Sans","Segoe UI","Noto Sans",sans-serif;
 	/* shoutout to bettermotherfuckingwebsite.com */
@@ -28,21 +29,21 @@ body {
 code {
 	font-family: 'Cascadia Mono','Consolas',monospace;
 }
+/* links (mainly show the underline on hover instead of always) */
 a:link {
-	text-decoration:  none; /* remove the underline */
+	text-decoration:  none;
 	color:            var(--solarized-magenta);
 } 
 a:visited {
-	text-decoration:  none;
 	color:            var(--solarized-violet);
 } 
 a:hover {
-	text-decoration:  none;
-	color:            var(--solarized-green);
+	text-decoration:  underline;
 } 
 a:active { /* clicked-and-held-down */
-	text-decoration:  underline;
+	color:            var(--solarized-green);
 }
+/* misc */
 .block-center {
 	display: block;
 	margin-left: auto;
