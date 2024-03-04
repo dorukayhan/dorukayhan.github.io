@@ -1,5 +1,5 @@
 /* util */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap');
 :root {
 	--solarized-base02: lab(20 -12 -12);
 	--solarized-base01: lab(45  -7  -7);
